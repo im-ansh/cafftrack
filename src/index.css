@@ -84,39 +84,45 @@ All colors MUST be HSL.
   }
   
   .control-button {
-    @apply w-12 h-12 rounded-full flex items-center justify-center text-xl font-black transition-all duration-200;
-    background: var(--control-bg);
-    border: 2px solid hsl(var(--border));
+    @apply w-14 h-14 rounded-full flex items-center justify-center text-xl font-black transition-all duration-200;
+    background: hsl(var(--muted));
+    border: none;
   }
   
   .control-button:hover {
-    background: var(--control-active);
-    transform: scale(1.05);
+    background: hsl(var(--muted-foreground) / 0.2);
+  }
+  
+  .control-button:disabled {
+    @apply opacity-50;
   }
   
   .size-button {
-    @apply px-6 py-3 rounded-2xl font-bold transition-all duration-200 border-2;
+    @apply px-6 py-4 rounded-2xl font-bold transition-all duration-200 min-w-[100px];
+    background: transparent;
+    border: none;
   }
   
   .size-button.active {
-    @apply bg-primary text-primary-foreground border-primary;
-    box-shadow: var(--shadow-glow);
+    @apply bg-white text-black;
   }
   
   .size-button:not(.active) {
-    @apply bg-transparent text-muted-foreground border-border hover:border-primary/50;
+    @apply bg-transparent text-muted-foreground;
   }
   
   .drink-selector {
-    @apply w-full p-4 rounded-2xl border-2 transition-all duration-200 font-bold;
+    @apply w-full p-4 rounded-2xl transition-all duration-200 font-bold;
+    background: transparent;
+    border: none;
   }
   
   .drink-selector.active {
-    @apply bg-primary text-primary-foreground border-primary;
+    @apply bg-white text-black;
   }
   
   .drink-selector:not(.active) {
-    @apply bg-card text-card-foreground border-border hover:border-primary/50;
+    @apply bg-transparent text-muted-foreground;
   }
   
   .timer-display {

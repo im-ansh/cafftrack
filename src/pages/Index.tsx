@@ -64,7 +64,7 @@ const Index = () => {
       {/* Header */}
       <div className="flex justify-between items-center p-4">
         <div className="text-2xl font-black text-foreground">
-          Mug Meter Pro
+          Cafftrack
         </div>
         <div className="text-sm text-muted-foreground">
           {format(new Date(), 'h:mm a')}
@@ -103,8 +103,7 @@ const Index = () => {
         </div>
 
         {/* Drink Selector */}
-        <div className="caffeine-card">
-          <h3 className="text-lg font-black mb-4 text-center">Select Drink</h3>
+        <div className="mb-8">
           <DrinkSelector 
             selectedDrink={selectedDrink} 
             onDrinkChange={setSelectedDrink} 
@@ -112,8 +111,7 @@ const Index = () => {
         </div>
 
         {/* Size Selector */}
-        <div className="caffeine-card">
-          <h3 className="text-lg font-black mb-4 text-center">Size</h3>
+        <div className="mb-8">
           <SizeSelector 
             selectedSize={selectedSize} 
             onSizeChange={setSelectedSize} 
@@ -121,8 +119,7 @@ const Index = () => {
         </div>
 
         {/* Quantity Selector */}
-        <div className="caffeine-card">
-          <h3 className="text-lg font-black mb-4 text-center">Quantity</h3>
+        <div className="mb-8">
           <div className="flex justify-center">
             <QuantitySelector 
               quantity={quantity} 
@@ -132,9 +129,9 @@ const Index = () => {
         </div>
 
         {/* Today's Total */}
-        <div className="caffeine-card text-center">
+        <div className="text-center mb-8">
           <div className="text-muted-foreground text-sm">Today's Total</div>
-          <div className="text-2xl font-black text-caffeine">{Math.round(getTodayTotal())} mg</div>
+          <div className="text-2xl font-black text-foreground">{Math.round(getTodayTotal())} mg</div>
         </div>
 
         {/* Confirm Button */}
