@@ -33,8 +33,12 @@ export function DrinkDisplay({ drink, size, quantity }: DrinkDisplayProps) {
               src={drink.image}
               alt={drink.name}
               className={`${imageSize} object-contain transition-all duration-300`}
-              loading="lazy"
+              loading="eager"
               decoding="async"
+              onLoad={(e) => {
+                e.currentTarget.style.opacity = '1';
+              }}
+              style={{ opacity: '0.8' }}
             />
           </div>
         ))}
