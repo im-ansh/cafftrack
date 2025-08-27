@@ -61,7 +61,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Caffeine theme colors
+				coffee: 'hsl(var(--coffee-brown))',
+				tea: 'hsl(var(--tea-green))',
+				caffeine: 'hsl(var(--caffeine-orange))',
+				control: {
+					DEFAULT: 'hsl(var(--control-bg))',
+					active: 'hsl(var(--control-active))'
 				}
+			},
+			fontWeight: {
+				'heavy': 'var(--font-weight-heavy)',
+				'black': 'var(--font-weight-black)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
