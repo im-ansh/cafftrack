@@ -6,9 +6,9 @@
   "background_color": "#000000",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/",
-  "id": "/",
+  "scope": "./",
+  "start_url": "./",
+  "id": "./",
   "icons": [
     {
       "src": "https://dsxoyd7bzv3wdirr.public.blob.vercel-storage.com/retouch_2025082714091944.png",

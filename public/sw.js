@@ -1,10 +1,9 @@
 
-const CACHE_NAME = 'cafftrack-v3';
+const CACHE_NAME = 'cafftrack-v4';
 const urlsToCache = [
   '/',
   '/manifest.json',
-  '/src/main.tsx',
-  '/src/index.css',
+  '/index.html',
   'https://dsxoyd7bzv3wdirr.public.blob.vercel-storage.com/retouch_2025082714091944.png'
 ];
 
