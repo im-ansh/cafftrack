@@ -1,3 +1,4 @@
+
 {
   "name": "Cafftrack - Caffeine Tracker",
   "short_name": "Cafftrack",
@@ -8,18 +9,40 @@
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
+  "id": "/",
   "icons": [
     {
-      "src": "icon-512.png",
+      "src": "https://dsxoyd7bzv3wdirr.public.blob.vercel-storage.com/retouch_2025082714091944.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "icon-512.png",
+      "src": "https://dsxoyd7bzv3wdirr.public.blob.vercel-storage.com/retouch_2025082714091944.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable any"
+    },
+    {
+      "src": "https://dsxoyd7bzv3wdirr.public.blob.vercel-storage.com/retouch_2025082714091944.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://dsxoyd7bzv3wdirr.public.blob.vercel-storage.com/retouch_2025082714091944.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["health", "lifestyle", "productivity"],
+  "screenshots": [
+    {
+      "src": "https://dsxoyd7bzv3wdirr.public.blob.vercel-storage.com/retouch_2025082714091944.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
     }
   ]
 }
