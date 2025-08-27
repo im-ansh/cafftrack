@@ -60,35 +60,35 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background px-4 max-w-md mx-auto">
       {/* Header */}
-      <div className="flex justify-between items-center p-4">
-        <div className="text-2xl font-black text-foreground">
+      <div className="flex justify-between items-center py-4">
+        <div className="text-xl sm:text-2xl font-black text-foreground">
           Cafftrack
         </div>
-        <div className="text-sm text-muted-foreground">
+        <div className="text-xs sm:text-sm text-muted-foreground">
           {format(new Date(), 'h:mm a')}
         </div>
       </div>
 
       {/* History Button */}
-      <div className="px-4 mb-4">
+      <div className="mb-4">
         <Button
           variant="outline"
           onClick={() => setIsHistoryOpen(true)}
-          className="w-full font-bold border-2"
+          className="w-full font-bold border-2 h-12"
         >
-          <History className="mr-2" size={20} />
+          <History className="mr-2" size={18} />
           View History
         </Button>
       </div>
 
       {/* Caffeine Timer */}
-      <div className="px-4 mb-6">
+      <div className="mb-6">
         <CaffeineTimer lastCaffeineTime={lastCaffeineTime} />
       </div>
 
-      <div className="px-4 space-y-6">
+      <div className="space-y-8">
         {/* Drink Display */}
         <DrinkDisplay 
           drink={selectedDrink} 
@@ -98,8 +98,10 @@ const Index = () => {
 
         {/* Caffeine Content */}
         <div className="text-center">
-          <div className="text-muted-foreground text-lg">Caffeine content</div>
-          <div className="text-5xl font-black text-caffeine">{totalCaffeine} <span className="text-2xl">mg</span></div>
+          <div className="text-muted-foreground text-base sm:text-lg">Caffeine content</div>
+          <div className="text-4xl sm:text-5xl font-black text-foreground">
+            {totalCaffeine} <span className="text-xl sm:text-2xl">mg</span>
+          </div>
         </div>
 
         {/* Drink Selector */}
@@ -131,18 +133,16 @@ const Index = () => {
         {/* Today's Total */}
         <div className="text-center mb-8">
           <div className="text-muted-foreground text-sm">Today's Total</div>
-          <div className="text-2xl font-black text-foreground">{Math.round(getTodayTotal())} mg</div>
+          <div className="text-xl sm:text-2xl font-black text-foreground">{Math.round(getTodayTotal())} mg</div>
         </div>
 
         {/* Confirm Button */}
         <Button 
           onClick={logCaffeine}
-          className="w-full h-14 text-xl font-black rounded-2xl"
+          className="w-full h-12 sm:h-14 text-lg sm:text-xl font-black rounded-2xl mb-8"
         >
           Confirm
         </Button>
-
-        <div className="h-8" /> {/* Bottom spacing */}
       </div>
 
       {/* History Modal */}

@@ -8,7 +8,7 @@ interface SizeSelectorProps {
 
 export function SizeSelector({ selectedSize, onSizeChange }: SizeSelectorProps) {
   return (
-    <div className="flex gap-2 flex-wrap">
+    <div className="flex gap-2 flex-wrap justify-center">
       {DRINK_SIZES.map((size) => (
         <button
           key={size.id}

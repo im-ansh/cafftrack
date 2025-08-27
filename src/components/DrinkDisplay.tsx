@@ -10,15 +10,15 @@ export function DrinkDisplay({ drink, size, quantity }: DrinkDisplayProps) {
   const getImageSize = () => {
     switch (size.id) {
       case 'small':
-        return 'w-32 h-32';
+        return 'w-24 h-24 sm:w-32 sm:h-32';
       case 'medium':
-        return 'w-40 h-40';
+        return 'w-28 h-28 sm:w-40 sm:h-40';
       case 'large':
-        return 'w-48 h-48';
+        return 'w-32 h-32 sm:w-48 sm:h-48';
       case 'extra-large':
-        return 'w-56 h-56';
+        return 'w-36 h-36 sm:w-56 sm:h-56';
       default:
-        return 'w-40 h-40';
+        return 'w-28 h-28 sm:w-40 sm:h-40';
     }
   };
 
@@ -33,6 +33,8 @@ export function DrinkDisplay({ drink, size, quantity }: DrinkDisplayProps) {
               src={drink.image}
               alt={drink.name}
               className={`${imageSize} object-contain transition-all duration-300`}
+              loading="lazy"
+              decoding="async"
             />
           </div>
         ))}
