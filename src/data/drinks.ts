@@ -3,6 +3,8 @@ import blackCoffeeImg from '@/assets/black-coffee.png';
 import cafeMacchiatoImg from '@/assets/cafe-macchiato.png';
 import cafeLatteImg from '@/assets/cafe-latte.png';
 import chaiTeaImg from '@/assets/chai-tea.png';
+import greenTeaImg from '@/assets/green-tea.png';
+import cappuccinoImg from '@/assets/cappuccino.png';
 
 export const DRINK_TYPES: DrinkType[] = [
   {
@@ -28,6 +30,18 @@ export const DRINK_TYPES: DrinkType[] = [
     name: 'Chai Tea',
     caffeinePerMl: 0.063, // 15mg per 240ml
     image: chaiTeaImg,
+  },
+  {
+    id: 'green-tea',
+    name: 'Green Tea',
+    caffeinePerMl: 0.17, // 40mg per 237ml
+    image: greenTeaImg,
+  },
+  {
+    id: 'cappuccino',
+    name: 'Cappuccino',
+    caffeinePerMl: 0.43, // 154mg per 355ml
+    image: cappuccinoImg,
   },
 ];
 
